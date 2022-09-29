@@ -1,7 +1,17 @@
 {
-  "name": "reactjs",
+  "name": "React-Js",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falconitconsultant/React-JS.git"
+  },
+  "author": "Yousuf Kalim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/falconitconsultant/React-JS/issues"
+  },
+  "homepage": "https://github.com/falconitconsultant/React-JS#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
