@@ -1,0 +1,14 @@
+/* Importing all CSS files */
+@import url('./Header.css');
+
+/* Defaults */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Primary Variables */
+:root {
+  --primary: 'green';
+}

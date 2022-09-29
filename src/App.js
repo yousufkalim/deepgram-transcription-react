@@ -1,26 +1,29 @@
+// Init
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ToastContainer, Flip } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
+// Files
+import Index from './routes/index';
+import './css/index.css';
+
+// Component
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* toastify Container for Notification */}
+      <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+        hideProgressBar={true}
+        transition={Flip}
+      />
+
+      {/* Routes */}
+      <Index />
     </div>
   );
 }
 
+// Export
 export default App;
