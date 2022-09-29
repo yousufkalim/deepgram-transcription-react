@@ -39,6 +39,10 @@
       "react-app/jest"
     ]
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{js,css,md,html,json}": "npx pretty-quick --staged"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -52,7 +56,9 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
     "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3"
   }

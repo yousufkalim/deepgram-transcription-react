@@ -5,7 +5,8 @@ import React, { useContext, useState, createContext } from 'react';
 const storeContext = createContext();
 const storeUpdateContext = createContext();
 
-// We are also initializing useContexts here then we only call these functions where we need that data
+// We are also initializing useContexts here
+// we only call these functions where we need that data
 export function Store() {
   return useContext(storeContext);
 }
@@ -17,18 +18,17 @@ export function UpdateStore() {
 // Initializing Store Provider
 export function StoreProvider({ children }) {
   // Initializing State
-  let [store, setStore] = useState({
+  const [store, setStore] = useState({
     loggedIn: false,
-    user: {}
+    user: {},
   });
 
-  const updateStore = data => {
-    setStore(prev => {
-      return {
-        ...prev,
-        ...data
-      };
-    });
+  // eslint-disable-next-line react/jsx-no-constructed-context-values
+  const updateStore = (data) => {
+    setStore((prev) => ({
+      ...prev,
+      ...data,
+    }));
   };
 
   // Render

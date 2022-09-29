@@ -3,14 +3,13 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 // Routes
-import Home from '../containers/Home.js';
+import Home from '../containers/Home';
 
-const index = () => {
+function Index() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
     </Routes>
   );
-};
-
-export default index;
+}
+export default Index;
