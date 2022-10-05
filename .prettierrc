@@ -4,7 +4,7 @@
   "printWidth": 100,
   "singleQuote": true,
   "trailingComma": "all",
-  "jsxBracketSameLine": true,
+  "jsxBracketSameLine": false,
   "useTabs": false,
   "quoteProps": "as-needed",
   "jsxSingleQuote": false,
