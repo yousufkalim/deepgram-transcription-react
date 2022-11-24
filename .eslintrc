@@ -4,7 +4,7 @@
     "node": true,
     "es2021": true
   },
-  "extends": ["eslint:recommended", "airbnb", "airbnb/hooks"],
+  "extends": ["eslint:recommended", "airbnb", "airbnb/hooks", "plugin:prettier/recommended"],
   "parserOptions": {
     "ecmaVersion": 12
   },
