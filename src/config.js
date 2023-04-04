@@ -1,13 +1,13 @@
-let baseUrl = 'http://localhost:5000/api';
+let baseUrl = 'http://localhost:5000/api/v1';
 
-if (window.location.host === 'reactapp-dev.falconweb.app') {
-  baseUrl = 'https://reactapp-api-dev.falconweb.app/api';
-} else if (window.location.host === 'reactapp-qa.falconweb.app') {
-  baseUrl = 'https://reactapp-api-qa.falconweb.app/api';
-} else if (window.location.host === 'reactapp-staging.falconweb.app') {
-  baseUrl = 'https://reactapp-api-staging.falconweb.app/api';
-} else if (window.location.host === 'reactapp-prod.falconweb.app/') {
-  baseUrl = 'https://reactapp-api-prod.falconweb.app/api';
+if (window.location.host === 'transcription-dev.falconweb.app') {
+  baseUrl = 'https://transcription-api-dev.falconweb.app/api/v1';
+} else if (window.location.host === 'transcription-qa.falconweb.app') {
+  baseUrl = 'https://transcription-api-qa.falconweb.app/api/v1';
+} else if (window.location.host === 'transcription-staging.falconweb.app') {
+  baseUrl = 'https://transcription-api-staging.falconweb.app/api/v1';
+} else if (window.location.host === 'transcription-prod.falconweb.app/') {
+  baseUrl = 'https://transcription-api-prod.falconweb.app/api/v1';
 }
 
 module.exports = { baseUrl };

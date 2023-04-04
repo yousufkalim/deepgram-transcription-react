@@ -1,5 +1,6 @@
 /* Importing all CSS files */
 @import url('./Header.css');
+@import url('./Form.css');
 
 /* Defaults */
 * {
@@ -11,4 +12,8 @@
 /* Primary Variables */
 :root {
   --primary: 'green';
+}
+
+body {
+  padding: 20px;
 }

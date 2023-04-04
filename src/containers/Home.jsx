@@ -2,13 +2,13 @@
 import React from 'react';
 
 // Importing Components
-import Header from '../components/Header';
+import Form from '../components/Form';
 
 // Home Component
 export default function Home() {
   return (
     <div>
-      <Header />
+      <Form />
     </div>
   );
 }
