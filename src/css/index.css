@@ -1,6 +1,6 @@
 /* Importing all CSS files */
-@import url('./Header.css');
 @import url('./Form.css');
+@import url('./Transcript.css');
 
 /* Defaults */
 * {

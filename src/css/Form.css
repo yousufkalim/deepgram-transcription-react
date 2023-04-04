@@ -45,8 +45,13 @@
   transition: all 0.2s linear;
 }
 
-.form-container form button:hover {
+.form-container form button:enabled:hover {
   border: 1px solid orangered;
   background-color: white;
   color: orangered;
+}
+
+.form-container form button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }

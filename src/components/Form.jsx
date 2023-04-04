@@ -24,6 +24,8 @@ export default function Form() {
     e.preventDefault();
     setLoading(true);
 
+    console.log(data);
+
     if (type === 'text' && !data.audio_url) {
       return toast.error('URL is not provided');
     }
@@ -42,7 +44,7 @@ export default function Form() {
     try {
       const { data: res } = await api('post', '/transcriptions/transcribe', formData);
 
-      updateStore({ summary: res.summaries[0]?.summary, transcript: res.transcript });
+      updateStore({ summary: res.summaries[0]?.summary, transcript: res.transcript.transcript });
       return setLoading(false);
     } catch (err) {
       return setLoading(false);
