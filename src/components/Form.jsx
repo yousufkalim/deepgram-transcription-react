@@ -24,8 +24,6 @@ export default function Form() {
     e.preventDefault();
     setLoading(true);
 
-    console.log(data);
-
     if (type === 'text' && !data.audio_url) {
       return toast.error('URL is not provided');
     }
